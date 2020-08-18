@@ -15,7 +15,44 @@ namespace Kehrwert
     {
         static void Main(string[] args)
         {
+         
+            //Deklaration der benötigten Variablen
+
+            double zahl, kehrwert;
+
+            string weiterrechnen = "";
+
+            do
+                {
             
+
+                    Console.WriteLine("Bitte Geben Sie eine Zahl ein, von welcher der Kehrwert gebildet werden soll.\n")
+
+                     zahl= double.Parse(Console.ReadLine());
+
+                     kehrwert = 1/zahl;
+
+                    Console.WriteLine("Die eingegebene Zahl lautet: {0} .\nIhr Kehrwert ist: {1}", zahl, kehrwert);
+
+                    Console.WriteLine("\nMöchten Sie für eine weitere Zahl den Kehrwert berechnen?\nAntworten Sie mit (j)a und (n)ein.")
+
+                }
+
+            while(weiterrechnen != "n")
+
+            Console.WriteLine("");
+
+            Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
